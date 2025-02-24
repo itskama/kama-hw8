@@ -1,4 +1,4 @@
-import { Show } from "../types"; // ✅ Импортируем из types.ts
+import { Show } from "../types"; 
 import ShowCard from "./ShowCard";
 import { Grid } from "@mui/material";
 

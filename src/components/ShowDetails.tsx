@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchShowById } from "../api/api";
-import { Show } from "../types"; // ✅ Импортируем из types.ts
+import { Show } from "../types"; 
 import { Container, Typography, Box } from "@mui/material";
 
 const ShowDetails = () => {

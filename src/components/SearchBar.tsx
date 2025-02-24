@@ -5,7 +5,7 @@ import { Show } from "../types";
 import { fetchShows } from "../api/api";
 
 interface SearchBarProps {
-  onSearch: (query: string) => void; // ✅ Добавили тип для onSearch
+  onSearch: (query: string) => void; 
 }
 
 const SearchBar = ({ onSearch }: SearchBarProps) => {
@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
     if (value.length > 2) {
       const shows = await fetchShows(value);
       setResults(shows);
-      onSearch(value); // ✅ Теперь TypeScript не ругается
+      onSearch(value); 
     } else {
       setResults([]);
     }
